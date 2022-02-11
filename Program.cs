@@ -21,21 +21,57 @@ namespace CSharpBrasil
             ValidarCPF(cpf2);
             ValidarCPF(cpf3);
 
+            string cnpj1 = "69562011000161";
+            string cnpj2 = "66187672000166";
+
+            ValidarCNPJ(cnpj1);
+            ValidarCNPJ(cnpj2);
+
+
+            string titulo1 = "273881301023";
+            string titulo2 = "768581181041";
+
+            ValidarTitulo(titulo1);
+            ValidarTitulo(titulo2);
+
             Console.ReadLine();
+        }
+
+        private static void ValidarTitulo(string titulo)
+        {
+            if (new TituloEleitoralValidator().IsValid(titulo))
+            {
+                Console.WriteLine("TITULO VALIDO: " + titulo);
+            }
+            else
+            {
+                Console.WriteLine("TITULO INVALIDO: " + titulo);
+            }
+        }
+
+        private static void ValidarCNPJ(string cnpj)
+        {
+            if (new CNPJValidator().IsValid(cnpj)){
+
+                Console.WriteLine("CNPJ VALIDO: " + cnpj);
+            }
+            else
+            {
+                Console.WriteLine("CNPJ INVALIDO: " + cnpj);
+            }
         }
 
 
         private static void ValidarCPF(string cpf)
         {
-            try
+            if (new CPFValidator().IsValid(cpf))
             {
-                new CPFValidator().AssertValid(cpf);
                 Console.WriteLine("CPF VALIDO: " + cpf);
             }
-            catch (Exception exc)
+            else 
             {
 
-                Console.WriteLine("CPF INVALIDO: " + cpf + " : " + exc.ToString());
+                Console.WriteLine("CPF INVALIDO: " + cpf);
             }
         }
     }
