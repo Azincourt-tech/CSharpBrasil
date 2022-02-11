@@ -1,4 +1,5 @@
-﻿using Caelum.Stella.CSharp.Validation;
+﻿using Caelum.Stella.CSharp.Format;
+using Caelum.Stella.CSharp.Validation;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,6 +13,8 @@ namespace CSharpBrasil
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("--------Validação de CPF---------");
+            
 
             string cpf1 = "86288366757";
             string cpf2 = "98745366797";
@@ -21,12 +24,17 @@ namespace CSharpBrasil
             ValidarCPF(cpf2);
             ValidarCPF(cpf3);
 
+            Console.WriteLine();
+            Console.WriteLine("--------Validação de CNPJ---------");
+
             string cnpj1 = "69562011000161";
             string cnpj2 = "66187672000166";
 
             ValidarCNPJ(cnpj1);
             ValidarCNPJ(cnpj2);
 
+            Console.WriteLine();
+            Console.WriteLine("--------Validação de Titulo Eleitoral---------");
 
             string titulo1 = "273881301023";
             string titulo2 = "768581181041";
@@ -34,8 +42,25 @@ namespace CSharpBrasil
             ValidarTitulo(titulo1);
             ValidarTitulo(titulo2);
 
+            Console.WriteLine();
+            Console.WriteLine("--------Formatação de CPF, CNPJ e Titulo Eleitoral---------");
+
+            string cpfFormatdo = new CPFFormatter().Format(cpf1);
+            Console.WriteLine(cpfFormatdo);
+
+
+            string cnpjFormatdo = new CNPJFormatter().Format(cnpj1);
+            Console.WriteLine(cnpjFormatdo);
+
+
+            string tituloFormatdo = new TituloEleitoralFormatter().Format(titulo1);
+            Console.WriteLine(tituloFormatdo);
+
             Console.ReadLine();
         }
+
+
+
 
         private static void ValidarTitulo(string titulo)
         {
