@@ -39,4 +39,24 @@ namespace CSharpBrasil
             }
         }
     }
+
+
+
+    #region Validação de CPF
+
+    //private static void ValidarCPF(string cpf)
+    //{
+    //    try
+    //    {
+    //        new CPFValidator().AssertValid(cpf);
+    //        Console.WriteLine("CPF VALIDO: " + cpf);
+    //    }
+    //    catch (Exception exc)
+    //    {
+
+    //        Console.WriteLine("CPF INVALIDO: " + cpf + " : " + exc.ToString());
+    //    }
+    //}
+
+    #endregion
 }
