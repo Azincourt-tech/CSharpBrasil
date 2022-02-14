@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrabalhandoComDinheiro", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEP", "CEP\CEP.csproj", "{C8F84EED-B7E5-476B-A311-16057096B9D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContratoDeTrabalho", "ContratoDeTrabalho\ContratoDeTrabalho.csproj", "{C73BC7B4-72A5-49B9-98F1-A6A3115A9879}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C8F84EED-B7E5-476B-A311-16057096B9D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8F84EED-B7E5-476B-A311-16057096B9D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8F84EED-B7E5-476B-A311-16057096B9D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C73BC7B4-72A5-49B9-98F1-A6A3115A9879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C73BC7B4-72A5-49B9-98F1-A6A3115A9879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C73BC7B4-72A5-49B9-98F1-A6A3115A9879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C73BC7B4-72A5-49B9-98F1-A6A3115A9879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
