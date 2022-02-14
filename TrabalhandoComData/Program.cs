@@ -23,10 +23,19 @@ namespace TrabalhandoComData
             Console.WriteLine(data.ToString("HH:mm"));
             Console.WriteLine(data.ToString("HH:mm:ss.fff"));
 
+            //Data por extenso
+            Console.WriteLine(data.ToString("D"));
+            Console.WriteLine(data.ToString("m"));
+            Console.WriteLine(data.ToString("Y"));
 
+            // Formatação de data ida e volta
+            Console.WriteLine(data.ToString("G"));
+            Console.WriteLine(data.ToString("O"));
+            Console.WriteLine(DateTime.Parse(data.ToString("O")).ToString("dd/MM/yyyy HH:mm:ss.fff"));
 
-
-
+            // Pega hora com segundo ou sem
+            Console.WriteLine(data.ToString("t"));
+            Console.WriteLine(data.ToString("T"));
 
             Console.ReadLine();
         }
